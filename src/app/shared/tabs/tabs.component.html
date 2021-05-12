@@ -1,0 +1,10 @@
+<div class="tabs-container">
+  <div *ngFor="let tab of dynamicTabs" (click)="selectTab(tab)" class="tab-wrapper" [class.active]="tab.active">
+    <div class="tab-inner">
+      <span>{{tab.title}}</span>
+      <i class="pi pi-times" (click)="closeTab(tab)"></i>
+    </div>
+  </div>
+</div>
+
+<ng-template dynamic-tabs #container></ng-template>

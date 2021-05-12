@@ -1,0 +1,6 @@
+<div class="pane">
+  <ng-content *ngIf="!template"></ng-content>
+  <ng-container *ngIf="template"
+                [ngTemplateOutlet]="template">
+  </ng-container>
+</div>

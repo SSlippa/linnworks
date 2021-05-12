@@ -1,0 +1,6 @@
+<div>
+  <div class="link-button" *ngFor="let link of links" (click)="onClick(link.label)">
+    <i class="{{link.icon}}"></i>
+    <div>{{link.label}}</div>
+  </div>
+</div>
